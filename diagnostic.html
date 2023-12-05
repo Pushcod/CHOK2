@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Это описание самого лучшего сайта, то есть - вашего сайта!">
+    <meta name="keywords" content="Это ключевые слова для индексирования вашей страницы">
+    <meta name="author" content="">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="#111111">
+    <title></title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script defer src="js/main.js"></script>
+    <script defer  src="js/fileds.js"></script>
+</head>
+
+<body class="application" id="app">
+    <div id="loader"></div>
+    <div class="application__container" id="app-container">
+        <header class="application__header header" id="header">
+            <div class="container header__container">
+                <div class="header__content">
+                    <div class="header__col header__col--left">
+                        <ul class="header__list list-reset" role="listbox">
+                            <li class="header__list-item" role="listitem"><button data-hystmodal="#myModal"
+                                    class="header__list-button btn-reset" role="button">Информация о контенте</button>
+                            </li>
+                            <li class="header__list-item" role="listitem"><button data-hystmodal="#myModal2"
+                                    class="header__list-button btn-reset" role="button">Ключевые слова</button></li>
+                        </ul>
+                    </div>
+                    <div class="header__col header__col--center">
+                        <a href="index.html" class="header__logo logo logo--professor" role="link">
+                            <img class="header__logo-icon" src="img/logo-professor.png" alt="Логотип профессионалитета">
+                        </a>
+                    </div>
+                    <div class="header__col header__col--right">
+                        <h1 role="heading" class="header__title">Цифровой образовательный контент</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="application__main main-wrapper" id="main-wrapper">
+            <div class="main-wrapper__content">
+                <div class="main-wrapper__headline headline">
+                    <div class="container headline__container">
+                        <div class="headline__content">
+                            <h2 class="headline__title" role="heading">Тема:</h2>
+                            <h3 class="headline__theme" role="heading">Нормативно-правовая база
+                                транспортно-экспедиторской деятельности</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper__content-body container">
+                    <div class="main-wrapper__content-center content content--test">
+                        <ul class="content__types types list-reset" role="listbox">
+                            <li class="types__item">
+                                <a href="video.html" class="types__link" title="Освоение нового материала">Освоение
+                                    нового материала</a>
+                            </li>
+                            <li class="types__item">
+                                <a href="testing.html" class="types__link"
+                                    title="Применение изученного материала">Применение изученного материала</a>
+                            </li>
+                            <li class="types__item">
+                                <a href="diagnostic.html" class="types__link"
+                                    title="Диагностика приобритенных знаний, умений, навыков">Диагностика приобритенных
+                                    знаний, умений, навыков</a>
+                            </li>
+                            <a href="index.html" class="content__link link-start" title="Назад">Назад</a>
+                        </ul>
+                        <div class="content__quiz quiz">
+                            <!-- <button class="quiz__start" id="test-start">Пройти тестирование</button> -->
+                            <div class="quiz__wrapper">
+                                <div class="quiz__header">
+                                    <h2 class="quiz__title">Интерактивный тренажер</h2>
+                                </div>
+                                <div class="quiz__window">
+                                    <div id="quiz-container">
+                                        <div id="question-container">
+                                            <h2 id="question-text"></h2>
+                                            <img id="question-img" class="image-box" alt="" style="max-width: 100%;" /> <!-- Добавленный тег для изображения -->
+                                            <div id="options-container"></div>
+                                            <button id="next-button" onclick="nextQuestion()" disabled>Следующий вопрос</button>
+                                        </div>
+                                        <div id="result-container" style="display:none;">
+                                            <p id="result-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="main-wrapper__sidebar sidebar-right" id="sidebar-right">
+                        <div class="sidebar-right__container">
+                            <ul class="sidebar-right__list list-reset" role="listbox">
+                                <li class="sidebar-right__item sidebar-right__item--logo" role="listitem">
+                                    <a href="index.html" class="sidebar-right__item-logo logo logo--fgos">
+                                        <img loading="lazy" src="img/logo-fgos.png" alt="Логотип ФГОС СПО"
+                                            class="logo__icon" role="img">
+                                    </a>
+                                </li>
+                                <li class="sidebar-right__item sidebar-right__item--code" role="listitem">
+                                    <div class="sidebar-right__item-code group-info">
+                                        <h2 class="group-info__title"></h2>
+                                        <h3 class="group-info__subtitle"></h3>
+                                    </div>
+                                </li>
+                                <li class="sidebar-right__item sidebar-right__item--name" role="listitem">
+                                    <div class="sidebar-right__item-name group-info">
+                                        <h2 class="group-info__title" id="courseCode"></h2>
+                                        <h3 class="group-info__subtitle" id="courseTitle"></h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <div class="modal hystmodal" id="myModal" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Информация о контенте</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Similique, aliquid?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hystmodal" id="myModal2" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Ключевые слова</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Similique, aliquid?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--success hystmodal" aria-hidden="true" id="successModal">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <img src="img/svg/check-icon.svg" alt="Успешное выполнение" class="modal__window-icon">
+                    <h2 class="modal__window-title">Вы успешно прошли тест!</h2>
+                    <p class="modal__window-status">Вы набрали 100% <strong>(15 баллов)</strong></p>
+                    <p class="modal__window-status">Проходной балл 100% <strong>(15 баллов)</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+    <script src="./js/field.js"></script>
+    <script src="./quiz-2.js"></script>
+</body>
+
+</html>

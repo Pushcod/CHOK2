@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Это описание самого лучшего сайта, то есть - вашего сайта!">
+    <meta name="keywords" content="Это ключевые слова для индексирования вашей страницы">
+    <meta name="author" content="">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="#111111">
+    <title></title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/fileds.js"></script>
+</head>
+
+<body class="application" id="app">
+    <div id="loader"></div>
+    <div class="application__container" id="app-container">
+        <header class="application__header header" id="header">
+            <div class="container header__container">
+                <div class="header__content">
+                    <div class="header__col header__col--left">
+                        <ul class="header__list list-reset" role="listbox">
+                            <li class="header__list-item" role="listitem"><button data-hystmodal="#myModal"
+                                    class="header__list-button btn-reset" role="button">Информация о контенте</button>
+                            </li>
+                            <li class="header__list-item" role="listitem"><button data-hystmodal="#myModal2"
+                                    class="header__list-button btn-reset" role="button">Ключевые слова</button></li>
+                        </ul>
+                    </div>
+                    <div class="header__col header__col--center">
+                        <a href="index.html" class="header__logo logo logo--professor" role="link">
+                            <img class="header__logo-icon" src="img/logo-professor.png" alt="Логотип профессионалитета">
+                        </a>
+                    </div>
+                    <div class="header__col header__col--right">
+                        <h1 role="heading" class="header__title">Цифровой образовательный контент</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="application__main main-wrapper" id="main-wrapper">
+            <div class="main-wrapper__content">
+                <div class="main-wrapper__headline headline">
+                    <div class="container headline__container">
+                        <div class="headline__content">
+                            <h2 class="headline__title" role="heading">Тема:</h2>
+                            <h3 class="headline__theme" role="heading"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper__content-body container">
+                    <div class="main-wrapper__content-center content">
+                        <ul class="content__types types list-reset" role="listbox">
+                            <li class="types__item">
+                                <a href="video.html" class="types__link" title="Освоение нового материала">Освоение
+                                    нового материала</a>
+                                <div class="types__info">
+                                    <img src="img/svg/analytics.svg" alt="" class="types__icon">
+                                    <div class="types__detail">
+                                        <p class="types__detail-text">
+                                            Формирование новых знаний и способов деятельности
+                                        </p>
+                                        <ul class="types__detail-icons list-reset" role="listbox">
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a href="video.html" class="types__detail-link">
+                                                    <img src="img/svg/play-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a data-hystmodal="#myModal3" href="#" class="types__detail-link">
+                                                    <img src="img/svg/docs-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="types__item">
+                                <a href="testing.html" class="types__link"
+                                    title="Применение изученного материала">Применение изученного материала</a>
+                                <div class="types__info">
+                                    <img src="img/svg/analytics.svg" alt="" class="types__icon">
+                                    <div class="types__detail">
+                                        <p class="types__detail-text">
+                                            Воспроизведение формируемых знаний и их применение в стандартных условиях
+                                        </p>
+                                        <ul class="types__detail-icons list-reset" role="listbox">
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a href="testing.html" class="types__detail-link">
+                                                    <img src="img/svg/play-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a data-hystmodal="#myModal4" href="#" class="types__detail-link">
+                                                    <img src="img/svg/docs-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="types__item">
+                                <a href="diagnostic.html" class="types__link"
+                                    title="Диагностика приобритенных знаний, умений, навыков">Диагностика приобритенных
+                                    знаний, умений, навыков</a>
+                                <div class="types__info">
+                                    <img src="img/svg/analytics.svg" alt="" class="types__icon">
+                                    <div class="types__detail">
+                                        <p class="types__detail-text">
+                                            Подведение итогов работы; фиксация достижения целей (оценка деятельности
+                                            обучающихся);
+                                        </p>
+                                        <ul class="types__detail-icons list-reset" role="listbox">
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a href="diagnostic.html" class="types__detail-link">
+                                                    <img src="img/svg/play-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                            <li class="types__detail-icon" role="listitem">
+                                                <a data-hystmodal="#myModal5" href="#" class="types__detail-link">
+                                                    <img src="img/svg/docs-icon.svg" alt="" width="35" height="35"
+                                                        class="types__detail-img">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <aside class="main-wrapper__sidebar sidebar-right" id="sidebar-right">
+                        <div class="sidebar-right__container">
+                            <ul class="sidebar-right__list list-reset" role="listbox">
+                                <li class="sidebar-right__item sidebar-right__item--logo" role="listitem">
+                                    <a href="index.html" class="sidebar-right__item-logo logo logo--fgos">
+                                        <img loading="lazy" src="img/logo-fgos.png" alt="Логотип ФГОС СПО"
+                                            class="logo__icon" role="img">
+                                    </a>
+                                </li>
+                                <li class="sidebar-right__item sidebar-right__item--code" role="listitem">
+                                    <div class="sidebar-right__item-code group-info">
+                                        <h2 class="group-info__title"></h2>
+                                        <h3 class="group-info__subtitle"></h3>
+                                    </div>
+                                </li>
+                                <li class="sidebar-right__item sidebar-right__item--name" role="listitem">
+                                    <div class="sidebar-right__item-name group-info">
+                                        <h2 class="group-info__title" id="courseCode"></h2>
+                                        <h3 class="group-info__subtitle" id="courseTitle"></h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="application__footer footer" id="footer">
+            <div class="container footer__container"></div>
+        </footer>
+        <div class="modal hystmodal" id="myModal" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Информация о контенте</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hystmodal" id="myModal2" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Ключевые слова</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hystmodal" id="myModal3" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Методическая рекомендация</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hystmodal" id="myModal4" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Методическая рекомендация</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hystmodal" id="myModal5" aria-hidden="true">
+            <div class="modal__wrapper hystmodal__wrap">
+                <div class="modal__window hystmodal__window" aria-modal="true">
+                    <button data-hystclose role="button" class="modal__window-close">x</button>
+                    <div class="modal__window-header">
+                        <h2 class="modal__window-title">Методическая рекомендация</h2>
+                    </div>
+                    <div class="modal__window-body">
+                        <p class="modal__window-text" id="modal-text-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+    <script src="./js/field.js"></script>
+</body>
+
+</html>
